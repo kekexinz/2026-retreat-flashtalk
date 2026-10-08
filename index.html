@@ -11,7 +11,10 @@
   body.cursor { cursor: default; }
   .slide { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; }
   .slide.on { display: flex; }
-  .slide img, .slide video { max-width: 100vw; max-height: 100vh; width: auto; height: auto; aspect-ratio: 16 / 9; }
+  .slide > img, .slide > video { max-width: 100vw; max-height: 100vh; width: auto; height: auto; aspect-ratio: 16 / 9; }
+  /* movie + sharp text layer stacked in one 16:9 box */
+  .stack { position: relative; width: min(100vw, 177.78vh); aspect-ratio: 16 / 9; }
+  .stack > * { position: absolute; inset: 0; width: 100%; height: 100%; }
   #hud { position: fixed; right: 14px; bottom: 10px; font: 13px/1 system-ui, sans-serif; color: var(--dim);
          opacity: 0; transition: opacity .3s; pointer-events: none; }
   body.cursor #hud { opacity: 1; }
@@ -24,7 +27,7 @@
 <!-- Order: title · Detect (2DTM principle, near real-time lysate, in situ CEMOVIS) ·
      Decode (context-aware detection) · Discover / rotations -->
 <div class="slide"><img src="media/01_title.png" alt="Title"></div>
-<div class="slide"><video src="media/02_2dtm_movie.mp4" muted playsinline preload="auto"></video></div>
+<div class="slide"><div class="stack"><video src="media/02_2dtm_movie.mp4" muted playsinline preload="auto"></video><img src="media/02_2dtm_movie_text.png" alt=""></div></div>
 <div class="slide"><img src="media/03_lysate_build1.png" alt="Lysate: reference"></div>
 <div class="slide"><img src="media/03_lysate_build2.png" alt="Lysate: + Speed mode"></div>
 <div class="slide"><img src="media/03_lysate_build3.png" alt="Lysate: + Accuracy mode"></div>
