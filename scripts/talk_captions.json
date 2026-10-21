@@ -1,0 +1,9 @@
+{
+  "size": [1920, 1080],
+  "lines": [
+    {"text": "BSC-1 cell lysate (control, with FBS)  ·  EMPIAR-13577", "x": 1245, "y": 111, "size": 24, "color": [0.7, 0.7, 0.7]},
+    {"text": "60S ribosomal subunit (PDB 5LZV)", "x": 318, "y": 111, "size": 24, "color": [0.7, 0.7, 0.7]},
+    {"text": "our fast 2DTM, Accuracy mode: 16 true + 3 false positives", "x": 637, "y": 1042, "size": 26, "color": [0.7, 0.7, 0.7], "align": "LEFT"},
+    {"text": "Data: Seraj Z, et al. eLife 2026", "x": 40, "y": 1042, "size": 22, "color": [0.55, 0.55, 0.55], "align": "LEFT"}
+  ]
+}

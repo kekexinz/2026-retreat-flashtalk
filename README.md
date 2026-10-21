@@ -86,6 +86,15 @@ runs `scripts/prep.py` to write the micrograph PNG, template mesh and
 ./run_web.sh    # web/2dtm_lysate_{light,dark}.mp4, web/2dtm_lysate.webm, poster (website)
 ```
 
+The talk movie has no text baked in. `index.html` lays `02_2dtm_movie_text.png`
+over it: the panel titles from `make_movie.py --static-text-png` plus the
+captions in `scripts/talk_captions.json` (drawn by `scripts/text_overlay.py`),
+both at 2x so they stay sharp at 4K. On the original work files, both steps
+reproduce the committed frames and text PNG pixel for pixel.
+
+The web MP4s are cropped to the content and have no text. `light` is on white
+(#ffffff) and `dark` on #1c1c1d.
+
 Both call `scripts/prepare_inputs.sh` first if `work/lysate_12781/scene.json`
 does not exist. Everything intermediate goes to `work/` (not in git, several GB
 once frames are rendered).
