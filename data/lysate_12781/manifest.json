@@ -1,0 +1,177 @@
+{
+  "micrograph_id": "12781",
+  "selection": "from frozen200:closest reference count to median18;tie-break by mean defocus closest to cohort median14298.4A;no outcomes used",
+  "reference_count": 18,
+  "mean_defocus_A": 15589.3,
+  "native_shape_yx": [
+    4092,
+    5760
+  ],
+  "native_pixel_size_A": 0.83,
+  "header_pixel_size_A": 0.8299999833106995,
+  "files": {
+    "reference_peaks.star": 18,
+    "accuracy_peaks.star": 19,
+    "speed_peaks.star": 15
+  },
+  "source_image": "/data/datasets/13577/data/DW/aligned_mc2_pix_1pt66_CTL_withFBS_12781_X 0Y 0-2_DW.mrc",
+  "source_template": "/data/GitHub/autocorr-2dtm/results/presentation/presentation200_20261007/assets/accuracy.mrc",
+  "template": "actual Lysate Accuracy template:5LZV60S,320cube at1.66A;Speed uses a separate156cube at2.979487A derived from the same source",
+  "metrics": {
+    "lysate_accuracy": {
+      "threshold": 7.180006,
+      "pipeline_seconds": 30.179971914039925,
+      "gate5A_2deg": {
+        "references": 18,
+        "detections": 19,
+        "matched": 16,
+        "false_positives": 3,
+        "recall": 0.8888888888888888,
+        "precision": 0.8421052631578947,
+        "detection_to_reference": [
+          0,
+          1,
+          2,
+          3,
+          -1,
+          5,
+          7,
+          6,
+          8,
+          10,
+          9,
+          11,
+          12,
+          13,
+          15,
+          14,
+          16,
+          -1,
+          -1
+        ],
+        "state": "polished",
+        "pixel_size_A": 1.66,
+        "criterion": {
+          "xy_A": 5.0,
+          "angle_deg": 2.0,
+          "strict": true
+        },
+        "matching": "maximum_cardinality_one_to_one_v1"
+      },
+      "gate3A_2deg": {
+        "references": 18,
+        "detections": 19,
+        "matched": 16,
+        "false_positives": 3,
+        "recall": 0.8888888888888888,
+        "precision": 0.8421052631578947,
+        "detection_to_reference": [
+          0,
+          1,
+          2,
+          3,
+          -1,
+          5,
+          7,
+          6,
+          8,
+          10,
+          9,
+          11,
+          12,
+          13,
+          15,
+          14,
+          16,
+          -1,
+          -1
+        ],
+        "state": "polished",
+        "pixel_size_A": 1.66,
+        "criterion": {
+          "xy_A": 3.0,
+          "angle_deg": 2.0,
+          "strict": true
+        },
+        "matching": "maximum_cardinality_one_to_one_v1"
+      }
+    },
+    "lysate_speed": {
+      "threshold": 7.144050598144531,
+      "pipeline_seconds": 10.397223770036362,
+      "gate5A_2deg": {
+        "references": 18,
+        "detections": 15,
+        "matched": 13,
+        "false_positives": 2,
+        "recall": 0.7222222222222222,
+        "precision": 0.8666666666666667,
+        "detection_to_reference": [
+          1,
+          2,
+          3,
+          6,
+          13,
+          11,
+          0,
+          4,
+          16,
+          10,
+          9,
+          12,
+          8,
+          -1,
+          -1
+        ],
+        "state": "polished",
+        "pixel_size_A": 2.979487179487179,
+        "criterion": {
+          "xy_A": 5.0,
+          "angle_deg": 2.0,
+          "strict": true
+        },
+        "matching": "maximum_cardinality_one_to_one_v1"
+      },
+      "gate3A_2deg": {
+        "references": 18,
+        "detections": 15,
+        "matched": 13,
+        "false_positives": 2,
+        "recall": 0.7222222222222222,
+        "precision": 0.8666666666666667,
+        "detection_to_reference": [
+          1,
+          2,
+          3,
+          6,
+          13,
+          11,
+          0,
+          4,
+          16,
+          10,
+          9,
+          12,
+          8,
+          -1,
+          -1
+        ],
+        "state": "polished",
+        "pixel_size_A": 2.979487179487179,
+        "criterion": {
+          "xy_A": 3.0,
+          "angle_deg": 2.0,
+          "strict": true
+        },
+        "matching": "maximum_cardinality_one_to_one_v1"
+      }
+    }
+  },
+  "sha256": {
+    "speed_peaks.star": "6ca4798a5fef2714edfe3416b8810c3cbfa20b9e6983f3ca276dedad012669a3",
+    "accuracy_peaks.star": "e70f9df28e064e99f319ed20ac62bb3f4febedea09bd8223aae95258546e9f29",
+    "reference_peaks.star": "077506cd8938e4917d49a549f94525090068afc8dc4854d562225a054f8cdd6a",
+    "template_5lzv_60S_accuracy_1p66A_320.mrc": "d00d4f2a664bfb521ff760a1ed1b94f3142eaa35dc1620eb409d5d4669e3eb0d",
+    "micrograph_12781_native_0p83A.mrc": "728b51fc837bfe47e8eec2cf77dc5c600abdaf886d511be26eb950408eb3fef5"
+  }
+}
